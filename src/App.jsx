@@ -4,13 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { LandingPage } from './components/landingPage'
 import Menu from './components/menu'
+import ServicePage from './components/services'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
    <Menu>
-    <LandingPage/>
+    <ServicePage/>
    </Menu>
   )
 }
