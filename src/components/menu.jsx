@@ -22,14 +22,16 @@ const Menu = ({ children }) => {
 
     return (
         <div className="">
-            <div className="flex text-2xl h-16 justify-between bg-black text-white">
-                <h1 className="mt-5">Primechase Studios</h1>
-                <button className="cursor-pointer">Menu[+]</button>
+            <div className="fixed top-0 w-full bg-black text-white z-50">
+                <div className="flex justify-between h-16 items-center px-4 text-2xl">
+                    <h1 className="">Primechase Studios</h1>
+                    <button className="cursor-pointer">Menu[+]</button>
+                </div>
+                <hr className="text-white "/>
             </div>
             {children}
-            <hr className="text-white "/>
             <div className="bg-black w-full flex flex-col text-white">
-                <div ref={footerRef} className={` transition-all duration-2500 ease-out ${footerVisible? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                <div ref={footerRef} className={` transition-all duration-2000 ease-out ${footerVisible? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <h1 className="ml-20 text-2xl font-bold mt-6">Primechase Studios</h1>
                     <div className="flex flex-row mt-6 h-56 ">
                         <div className="w-2/12 customPink  border-white border-2">
